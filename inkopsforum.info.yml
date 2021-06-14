@@ -1,0 +1,47 @@
+name: InköpsForum
+type: theme
+description: 'Bastemat för InköpsForum, ett subtema för Bartik'
+package: IFTheme
+core_version_requirement: ^9 | ^10 
+libraries:
+  - inkopsforum/global-styling
+ 
+base theme: bartik
+
+regions:
+  header: Header
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  highlighted: Highlighted
+  featured_top: Featured top
+  breadcrumb: Breadcrumb
+  f_top_one: F-top One
+  f_top_two: F-top Two
+  f_top_three: F-top Three
+  f_top_four: F-top Four
+  f_top_five: F-top Five
+  f_top_base: F-top Base
+  content: Content
+  sidebar_first: Sidebar first
+  sidebar_second: Sidebar second
+  featured_bottom_first: Featured bottom first
+  featured_bottom_second: Featured bottom second
+  featured_bottom_third: Featured bottom third
+  footer_first: Footer first
+  footer_second: Footer second
+  footer_third: Footer third
+  fotter_fourth: Fotter fourth
+  footer_fifth: Footer fifth
+
+
+libraries-override:
+  bartik/global-styling:
+    css:
+      theme:
+        css/colors.css: css/colors.css
+        css/components/featured-top.css: false
+        css/components/site-branding.css: false
+        css/components/field.css: false
+        css/components/page-title.css: false
+        
+        

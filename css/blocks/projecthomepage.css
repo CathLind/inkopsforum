@@ -1,0 +1,166 @@
+.diamonds-wrapper {
+	margin-top: 70px;
+}
+
+
+.diamonds {
+	font-size: 0;
+	margin: 40px auto;
+	position: relative;
+	text-align: center;
+	padding: 50px 0 0 57px;
+}
+.diamonds > li {
+	display: inline-block;
+	font-size: 18px;
+}
+
+.diamonds .diamond {
+	background: #fff;
+	display: block;
+	height: 255px;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	width: 255px;
+	overflow: hidden;
+	transform: rotate(-45deg);
+	border: 1px solid black;
+    box-shadow: 5px 5px 15px #8c8c8c;
+    border-radius: 10px;
+}
+
+.diamonds .content {
+	display: table-cell;
+	height: 255px;
+	padding: 0 10px;
+	transform: rotate(45deg);
+	text-align: center;
+	vertical-align: middle;
+	width: 255px;
+	position: relative;
+}
+
+.diamonds-sm .content img {
+	margin-left: -46%;
+	max-width: 375px;
+}
+.diamonds .diamond-sm .content:after {
+	left: 24%;
+	top: 48%;
+}
+
+@media (min-width: 1199px) {
+    
+    .diamonds > li:nth-child(1) {
+	margin-left: 20px;
+	margin-top: 55px;
+    }
+    
+	.diamonds > li:nth-child(2) {
+	margin-left: 130px;
+	margin-top: 55px;
+    }
+    
+	.diamonds > li:nth-child(3) {
+	margin-left: 122px;
+	margin-top: 55px;
+    }
+	.diamonds > li:nth-child(4) {
+	right: 274px;
+	top: 60px;
+	position: absolute;
+}
+	.diamonds > li:nth-child(5) {
+	margin-left: 400px;
+	margin-top: -60px;
+}
+	.diamonds > li:nth-child(6) {
+	position: absolute;
+	/* margin: -6px 0 0 -27px; */
+	right: -30px;
+	margin-top: 5px;
+}
+	.diamonds > li:nth-child(7) {
+	position: absolute;
+	/* margin: 97px 0 0 -133px; */
+	right: 80px;
+	margin-top: 108px;
+}
+	.diamonds .diamond-sm {
+		height: 128px;
+		width: 128px;
+	}
+	.diamonds .diamond-sm .content {
+		height: 128px;
+		width: 128px;
+	}
+
+
+	.row-diamons-description {
+		margin-top: -150px;
+		float: left;
+	}
+}
+@media (max-width: 1198px) {
+	.diamonds {
+		text-align: center;
+		width: 748px;
+		margin: 0 auto;
+		padding: 75px 0 75px 75px;
+	}
+	.diamonds::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+	.diamonds > li {
+		margin: 0;
+		position: static;
+		float: left;
+	}
+	.diamonds > li:nth-child(2n+2) {
+		margin-bottom: -50px;
+		margin-left: 55px;
+		margin-top: 200px;
+	}
+	.diamonds > li:nth-child(2n+1) {
+		clear: both;
+	}
+}
+@media (max-width: 748px) {
+	.diamonds {
+		margin: 0 auto;
+		padding: 25px 0 0 0;
+		text-align: center;
+		width: 445px;
+	}
+	.diamonds > li {
+		float: none !important;
+		clear: both !important;
+		margin: 45px 0 115px 95px !important;
+		display: block;
+	}
+}
+@media (max-width: 479px) {
+	.diamonds-wrapper {
+		min-height: 2650px;
+	}
+	.diamonds-wrapper .diamonds {
+		margin: 0 auto;
+		padding: 25px 0 0;
+		text-align: center;
+		width: 445px;
+		position: absolute;
+		left: 50%;
+		margin-left: -222px;
+	}
+	.diamonds-wrapper .diamonds > li {
+		text-align: center;
+	}
+}
+
+
+.row.row-diamons-description {
+	width: 50%;
+}

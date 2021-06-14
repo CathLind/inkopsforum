@@ -1,0 +1,38 @@
+{%
+set classes = [
+'block',
+'block-' ~ configuration.provider|clean_class,
+'block-' ~ plugin_id|clean_class,
+]
+
+%}
+<div{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+<section class="pt-md pb-xl home-concept-construction">
+    <div class="container">
+        <div class="row pt-xl">
+            <div class="col-md-12">
+                {% if content.field_project_header | render %}
+                {{ content.field_project_header }}
+                {% endif %}
+                <div class="diamonds-wrapper">
+                    <ul class="diamonds">
+                        {% if content.field_image | render %}
+                            {{ content.field_image }}
+                        {% endif %}
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+       {% if content.body | render %}
+        <div class="row row-diamons-description">
+            <div class="col-md-6">
+                {{ content.body }}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+    {{ title_suffix }}
+</div>

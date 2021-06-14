@@ -1,0 +1,19 @@
+global-styling:
+  version: VERSION
+  css:
+    theme::
+      vendor/bootstrap/css/bootstrap.min.css: {}
+      css/colors.css: {}
+      css/components/featured-top.css: {}
+      css/fonts.css: {}
+      css/style.css: {}
+      
+    js:
+     vendor/bootstrap/js/bootstrap.min.js: {}  
+     
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

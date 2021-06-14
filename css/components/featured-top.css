@@ -1,0 +1,13 @@
+.featured-top {
+	margin: 0;
+	padding: 20px 10px 45px;
+	text-align: center;
+	border-bottom: none;
+	background: #f0f0f0;
+	background: white;
+	text-shadow: 1px 1px #fff;
+	font-size: 1.2em;
+	font-weight: normal;
+	line-height: 1.4;
+}
+

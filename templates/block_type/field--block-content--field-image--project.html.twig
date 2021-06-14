@@ -1,0 +1,10 @@
+{% for key, item in items %}
+    {% set img = file_url(item.content['#item'].entity.fileuri) %}
+    <li>
+        <div class="{% if key == 3 or key == 5 or key == 6 %}{{ 'diamond-sm' }}{% endif %} diamond">
+            <div class="content">
+                <img src="{{ img }}" class="img-responsive" />
+            </div>
+        </div>
+    </li>
+{% endfor %}
