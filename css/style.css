@@ -429,3 +429,9 @@ h2.field-content.front-feature {
 }
 
 
+#edit-email,
+#edit-subject,
+#edit-message,
+#edit-name {
+	margin-right: 0;
+}
