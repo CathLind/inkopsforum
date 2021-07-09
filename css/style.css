@@ -82,13 +82,13 @@
 	.diamonds > li:nth-child(6) {
 	position: absolute;
 	/* margin: -6px 0 0 -27px; */
-	right: -30px;
-	margin-top: 5px;
+	right: 44px;
+	/* margin-top: 5px; */
 }
 	.diamonds > li:nth-child(7) {
 	position: absolute;
 	/* margin: 97px 0 0 -133px; */
-	right: 80px;
+	/* right: 80px; */
 	margin-top: 108px;
 }
 	.diamonds .diamond-sm {
